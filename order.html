@@ -61,11 +61,40 @@
             <label for="barang">Barang yang dipesan:</label>
             <input type="text" id="barang" name="barang" required readonly><br><br>
     
-            <button type="submit">Pesan Sekarang</button>
+            <button id="submit" type="button">Pesan Sekarang</button>
         </form>
     
+<h1 style="margin-top: 20px;">Detail Pesanan</h1>
+
         <div id="detailPemesanan">
             <!-- Tempat untuk menampilkan detail pemesanan -->
+            <table style="text-align: left;">
+                <tr>
+                    <th>Nama</th>
+                    <th>:</th>
+                    <th id="pnama"></th>
+                </tr>
+                <tr>
+                    <th>Alamat</th>
+                    <th>:</th>
+                    <th id="palamat"></th>
+                </tr>
+                <tr>
+                    <th>No Hp</th>
+                    <th>:</th>
+                    <th id="pnohp"></th>
+                </tr>
+                <tr>
+                    <th>Nama Barang</th>
+                    <th>:</th>
+                    <th id="pnamabarang"></th>
+                </tr>
+                <tr>
+                    <th>Harga</th>
+                    <th>:</th>
+                    <th id="pharga"></th>
+                </tr>
+            </table>
             
         </div>
     </section>

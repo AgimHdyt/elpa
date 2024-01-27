@@ -57,4 +57,26 @@ document.addEventListener('DOMContentLoaded', function() {
     // tampilkan di kolom barang yang dipesan
     document.getElementById('barang').value = productName
 
+    // untuk proses submit
+    document.getElementById('submit').addEventListener('click', function (event) {
+        // Ambil data dari form
+        const nama = document.getElementById('nama').value
+        const alamat = document.getElementById('alamat').value
+        const nohp = document.getElementById('nohp').value
+        const barang = document.getElementById('barang').value
+        const harga = sessionStorage.getItem('productPrice')
+console.log(nama)
+console.log(alamat)
+console.log(nohp)
+console.log(barang)
+console.log(harga)
+        document.getElementById('pnama').innerHTML = nama
+        document.getElementById('palamat').innerHTML = alamat
+        document.getElementById('pnohp').innerHTML = nohp
+        document.getElementById('pnamabarang').innerHTML = barang
+        document.getElementById('pharga').innerHTML = harga
+    })
+    
+
+
 });
